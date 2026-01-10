@@ -1,118 +1,115 @@
-# 我的个人主页
+# 珈蓝yaa 的个人小窝
 
 <style>
   :root {
-    --primary: #6366f1;
-    --text: #1f2937;
-    --text-light: #4b5563;
-    --bg: #f8fafc;
+    --primary: #00a1d6;
+    --primary-dark: #008ab8;
+    --text: #18191c;
+    --text-light: #505050;
+    --bg: #f6f7f9;
     --card: white;
   }
 
   @media (prefers-color-scheme: dark) {
     :root {
-      --primary: #818cf8;
-      --text: #f1f5f9;
-      --text-light: #94a3b8;
-      --bg: #0f172a;
-      --card: #1e293b;
+      --primary: #00d1ff;
+      --primary-dark: #00b0d9;
+      --text: #e5e6eb;
+      --text-light: #9ca3af;
+      --bg: #0e1117;
+      --card: #161b22;
     }
   }
 
   body {
     margin: 0;
-    padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacOSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: var(--bg);
     color: var(--text);
     line-height: 1.6;
   }
 
   .container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 20px;
   }
 
-  /* Header */
   header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #00a1d6 0%, #0077aa 100%);
     color: white;
-    padding: 1.5rem 0;
+    padding: 1.2rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
   }
 
-  header .container {
+  .header-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   .logo {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: bold;
   }
 
   nav a {
     color: white;
     text-decoration: none;
-    margin-left: 2rem;
+    margin-left: 2.2rem;
     font-weight: 500;
-    transition: all 0.2s;
   }
 
   nav a:hover {
-    color: #e0e7ff;
-    transform: translateY(-2px);
+    color: #e6faff;
   }
 
-  /* Main Content */
   .profile {
     text-align: center;
-    padding: 6rem 0 4rem;
+    padding: 7rem 0 5rem;
   }
 
   .avatar {
-    width: 180px;
-    height: 180px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
+    border: 5px solid var(--card);
+    box-shadow: 0 10px 35px rgba(0,0,0,0.2);
     object-fit: cover;
-    border: 6px solid white;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     margin-bottom: 1.8rem;
   }
 
   h1 {
-    font-size: 3.2rem;
-    margin: 0.4rem 0;
-    background: linear-gradient(90deg, #667eea, #9f7aea);
+    font-size: 3.4rem;
+    margin: 0.3rem 0;
+    background: linear-gradient(90deg, #00a1d6, #ff85a2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .subtitle {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     color: var(--text-light);
-    margin: 0.8rem 0 2rem;
+    margin: 0.6rem 0 1.5rem;
   }
 
   .info {
-    max-width: 680px;
-    margin: 0 auto 4rem;
-    font-size: 1.15rem;
+    max-width: 720px;
+    margin: 0 auto 2.5rem;
+    font-size: 1.1rem;
+    color: var(--text-light);
   }
 
-  /* Works Section */
   .works {
     padding: 3rem 0 5rem;
   }
 
   h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     margin-bottom: 3rem;
     position: relative;
   }
@@ -120,7 +117,7 @@
   h2:after {
     content: '';
     position: absolute;
-    width: 80px;
+    width: 90px;
     height: 4px;
     background: var(--primary);
     bottom: -12px;
@@ -131,21 +128,21 @@
 
   .works-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: 2rem;
   }
 
   .work-card {
     background: var(--card);
-    border-radius: 12px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     transition: all 0.3s ease;
   }
 
   .work-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
   }
 
   .work-img {
@@ -155,95 +152,106 @@
   }
 
   .work-content {
-    padding: 1.5rem;
+    padding: 1.4rem;
   }
 
   .work-title {
-    margin: 0 0 0.6rem;
-    font-size: 1.35rem;
+    margin: 0 0 0.7rem;
+    font-size: 1.32rem;
   }
 
   .work-desc {
     color: var(--text-light);
-    font-size: 0.98rem;
+    font-size: 0.97rem;
     margin: 0;
   }
 
-  /* Footer */
   footer {
-    background: #111827;
-    color: #9ca3af;
+    background: #0f1117;
+    color: #8a8f98;
     text-align: center;
     padding: 3rem 0 2rem;
     margin-top: 4rem;
   }
 
-  .social-links a {
-    color: #9ca3af;
-    margin: 0 1rem;
+  .social a {
+    color: #8a8f98;
+    margin: 0 1.2rem;
     font-size: 1.6rem;
-    transition: color 0.2s;
+    text-decoration: none;
   }
 
-  .social-links a:hover {
+  .social a:hover {
     color: white;
+  }
+
+  @media (max-width: 768px) {
+    .profile { padding: 5rem 0 3rem; }
+    h1 { font-size: 2.6rem; }
+    .avatar { width: 140px; height: 140px; }
+    .works-grid { grid-template-columns: 1fr; }
   }
 </style>
 
 <div class="container">
 
 <header>
-  <div class="container">
-    <div class="logo">关于我</div>
+  <div class="header-inner">
+    <div class="logo">珈蓝yaa</div>
     <nav>
       <a href="#home">首页</a>
-      <a href="#works">作品</a>
-      <a href="#contact">联系</a>
+      <a href="#works">创作</a>
+      <a href="https://space.bilibili.com/3546926523877748" target="_blank">B站</a>
     </nav>
   </div>
 </header>
 
 <main>
 
-  <section class="profile" id="home">
-    <img 
-      src="9p" 
-      alt="我的头像" 
-      class="avatar"
-    >
-    
-    <h1>珈蓝yaa_</h1>
-    <div class="subtitle">又菜又爱玩的B站小Up | 目前掌握：Py,C#,C++,Forms,WPF,WinUI3</div>
-    
-    <div class="info">
-      <p>目前主要在开发C#相关的程序</p>
-    </div>
-  </section>
+<section class="profile" id="home">
 
-  <section class="works" id="works">
-    <h2>已发布作品</h2>
+  <img 
+    src="https://i1.hdslb.com/bfs/face/bbcb5f8e36f816dd6f08d5a8768955488c29910d.jpg@128w_128h_1c_1s.webp" 
+    alt="珈蓝yaa" 
+    class="avatar">
+
+  <h1>珈蓝yaa</h1>
+  <div class="subtitle">又菜又爱玩的B站小Up | 目前掌握：Py,C#,C++,Forms,WPF,WinUI3</div>
+
+  <div class="info">
     
-    <div class="works-grid">
-      <div class="work-card">
-        <img src="9" alt="项目1" class="work-img">
-        <div class="work-content">
-          <h3 class="work-title">测试</h3>
-          <p class="work-desc">测试</p>
-        </div>
+  </div>
+
+</section>
+
+<section class="works" id="works">
+
+  <h2>个人项目</h2>
+
+  <div class="works-grid">
+
+    <div class="work-card">
+      <img src="" alt="1" class="work-img">
+      <div class="work-content">
+        <h3 class="work-title">了！</h3>
+        <p class="work-desc">ax</p>
       </div>
-
-     
     </div>
-  </section>
+
+    
+
+  </div>
+
+</section>
 
 </main>
 
 <footer>
-  <div class="social-links">
-    <a href="https://github.com" target="_blank">GitHub</a> •
-    <a href="https://bilibili.com" target="_blank">B站</a>
+  <div class="social">
+    <a href="https://space.bilibili.com/3546926523877748" target="_blank">Bilibili</a> •
+    <a href="https://github.com/Xiaowang0229" target="_blank">Github</a> •
   </div>
-  <p style="margin-top:1.5rem;">© 2026 珈蓝yaa_ · 版权所有，请勿盗用样式</p>
+  <p style="margin-top:1.8rem;">© 2026 珈蓝yaa · 今天也要开心摸鱼哦</p>
 </footer>
 
 </div>
