@@ -227,14 +227,24 @@
   <h2>个人项目</h2>
 
   <div class="works-grid">
-
+  <a href="https://github.com/Xiaowang0229/ARCV4" target="_blank" class="work-card-link">
     <div class="work-card">
-      <img src="" alt="1" class="work-img">
+      <img src="https://github.com/Xiaowang0229/Xiaowang0229.github.io/blob/main/AutoDianming4Icon.png?raw=true" alt="自动点名器V4" class="work-img">
       <div class="work-content">
-        <h3 class="work-title">了！</h3>
-        <p class="work-desc">ax</p>
+        <h3 class="work-title">适用于智慧教室的多功能自动点名器</h3>
+        <p class="work-desc">最新版本：4.0.0.0-hotfix.1</p>
       </div>
     </div>
+  </a>
+  <a href="https://github.com/Xiaowang0229/MultiGameLauncher" target="_blank" class="work-card-link">
+    <div class="work-card">
+      <img src="https://github.com/Xiaowang0229/Xiaowang0229.github.io/blob/main/SkillIconsRocket.png?raw=true" alt="Rocket Launcher" class="work-img">
+      <div class="work-content">
+        <h3 class="work-title">聚合式多游戏合一启动器</h3>
+        <p class="work-desc">最新版本：2.x</p>
+      </div>
+    </div>
+  </a>
 
     
 
