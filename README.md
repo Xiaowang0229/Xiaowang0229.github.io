@@ -1,5 +1,3 @@
-# 珈蓝yaa 的个人小窝
-
 <style>
   :root {
     --primary: #00a1d6;
@@ -211,7 +209,7 @@
 <section class="profile" id="home">
 
   <img 
-    src="https://i1.hdslb.com/bfs/face/bbcb5f8e36f816dd6f08d5a8768955488c29910d.jpg@128w_128h_1c_1s.webp" 
+    src="//i1.hdslb.com/bfs/face/bbcb5f8e36f816dd6f08d5a8768955488c29910d.jpg@128w_128h_1c_1s.webp" 
     alt="珈蓝yaa" 
     class="avatar">
 
@@ -249,7 +247,7 @@
 <footer>
   <div class="social">
     <a href="https://space.bilibili.com/3546926523877748" target="_blank">Bilibili</a> •
-    <a href="https://github.com/Xiaowang0229" target="_blank">Github</a> •
+    <a href="https://github.com/Xiaowang0229" target="_blank">Github</a>
   </div>
   <p style="margin-top:1.8rem;">© 2026 珈蓝yaa · 今天也要开心摸鱼哦</p>
 </footer>
