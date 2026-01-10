@@ -231,7 +231,8 @@
     <div class="work-card">
       <img src="https://github.com/Xiaowang0229/Xiaowang0229.github.io/blob/main/AutoDianming4Icon.png?raw=true" alt="自动点名器V4" class="work-img">
       <div class="work-content">
-        <h3 class="work-title">适用于智慧教室的多功能自动点名器</h3>
+        <h3 class="work-title">自动点名器</h3>
+        <h4 class="work-title">适用于智慧教室的多功能自动点名器</h4>
         <p class="work-desc">最新版本：4.0.0.0-hotfix.1</p>
       </div>
     </div>
@@ -240,7 +241,8 @@
     <div class="work-card">
       <img src="https://github.com/Xiaowang0229/Xiaowang0229.github.io/blob/main/SkillIconsRocket.png?raw=true" alt="Rocket Launcher" class="work-img">
       <div class="work-content">
-        <h3 class="work-title">聚合式多游戏合一启动器</h3>
+        <h3 class="work-title">Rocket Launcher</h3>
+        <h4 class="work-title">聚合式多游戏合一启动器</h4>
         <p class="work-desc">最新版本：2.x</p>
       </div>
     </div>
