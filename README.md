@@ -207,7 +207,7 @@
 
   <section class="profile" id="home">
     <img 
-      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" 
+      src="9p" 
       alt="我的头像" 
       class="avatar"
     >
