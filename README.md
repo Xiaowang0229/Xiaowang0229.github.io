@@ -209,7 +209,7 @@
 <section class="profile" id="home">
 
   <img 
-    src="//i1.hdslb.com/bfs/face/bbcb5f8e36f816dd6f08d5a8768955488c29910d.jpg@128w_128h_1c_1s.webp" 
+    src="https://github.com/Xiaowang0229/Xiaowang0229.github.io/blob/main/bbcb5f8e36f816dd6f08d5a8768955488c29910d.jpg@128w_128h_1c_1s.webp?raw=true" 
     alt="珈蓝yaa" 
     class="avatar">
 
